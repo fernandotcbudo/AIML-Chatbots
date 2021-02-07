@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml version="2.0">
+    	<!-- Sinonimos de pin -->
+    	
+    	
+  <category>
+     <pattern>NO ME HA LLEGADO * *</pattern>
+     <template>
+         <think><set name="pin"><star index= "2"/></set></think>
+         <condition name="pin" >
+             <li value="pink">
+                 <srai>
+                     _ PIN
+                 </srai>
+             </li>
+             
+            <li value="pun">
+                 <srai>
+                     _ PIN
+                 </srai>
+             </li>
+             
+            <li value="codigo">
+                 <srai>
+                     _ PIN
+                 </srai>
+             </li>
+
+         </condition>
+     </template>
+ </category>
+    	
+
+  <category>
+     <pattern>NECESITO * *</pattern>
+     <template>
+         <think><set name="pin"><star index= "2"/></set></think>
+         <condition name="pin" >
+             <li value="pink">
+                 <srai>
+                     _ PIN
+                 </srai>
+             </li>
+             
+            <li value="pun">
+                 <srai>
+                     _ PIN
+                 </srai>
+             </li>
+             
+            <li value="codigo">
+                 <srai>
+                     _ PIN
+                 </srai>
+             </li>
+
+         </condition>
+     </template>
+ </category>
+ 
+   <category>
+     <pattern>COMO HAGO PARA * * *</pattern>
+     <template>
+         <think><set name="pin"><star index= "3"/></set></think>
+         <condition name="pin" >
+             <li value="pink">
+                 <srai>
+                     _ PIN
+                 </srai>
+             </li>
+             
+            <li value="pun">
+                 <srai>
+                     _ PIN
+                 </srai>
+             </li>
+             
+            <li value="codigo">
+                 <srai>
+                     _ PIN
+                 </srai>
+             </li>
+
+         </condition>
+     </template>
+ </category>
+	
+
+  <category>
+     <pattern>NO ME HA LLEGADO * * DE CONFIRMACION</pattern>
+     <template>
+         <think><set name="pin"><star index= "2"/></set></think>
+         <condition name="pin" >
+             <li value="pink">
+                 <srai>
+                     _ PIN
+                 </srai>
+             </li>
+             
+            <li value="pun">
+                 <srai>
+                     _ PIN
+                 </srai>
+             </li>
+             
+            <li value="codigo">
+                 <srai>
+                     _ PIN
+                 </srai>
+             </li>
+
+         </condition>
+     </template>
+ </category>
+ 
+   <category>
+     <pattern>NO ME HA LLEGADO * * DE SIGNUS</pattern>
+     <template>
+         <think><set name="pin"><star index= "2"/></set></think>
+         <condition name="pin" >
+             <li value="pink">
+                 <srai>
+                     _ PIN
+                 </srai>
+             </li>
+             
+            <li value="pun">
+                 <srai>
+                     _ PIN
+                 </srai>
+             </li>
+             
+            <li value="codigo">
+                 <srai>
+                     _ PIN
+                 </srai>
+             </li>
+
+         </condition>
+     </template>
+ </category>
+ 
+    <category>
+     <pattern>NO ME ENVIARON * * </pattern>
+     <template>
+         <think><set name="pin"><star index= "2"/></set></think>
+         <condition name="pin" >
+             <li value="pink">
+                 <srai>
+                     _ PIN
+                 </srai>
+             </li>
+             
+            <li value="pun">
+                 <srai>
+                     _ PIN
+                 </srai>
+             </li>
+             
+            <li value="codigo">
+                 <srai>
+                     _ PIN
+                 </srai>
+             </li>
+
+         </condition>
+     </template>
+ </category>
+
+    
+    <category>
+	    <pattern>_ REGISTRAR * PIN</pattern>
+	    <template>
+	        <srai>_ PIN</srai>
+	    </template>
+    </category>
+    
+    <category>
+	    <pattern>_ CONFIRMAR * PIN</pattern>
+	    <template>
+	        <srai>_ PIN</srai>
+	    </template>
+    </category>
+    
+    
+       <category>
+     <pattern>NO ME LLEGA  * *</pattern>
+     <template>
+         <think><set name="pin"><star index= "2"/></set></think>
+         <condition name="pin" >
+             <li value="pink">
+                 <srai>
+                     _ PIN
+                 </srai>
+             </li>
+             
+            <li value="pun">
+                 <srai>
+                     _ PIN
+                 </srai>
+             </li>
+             
+            <li value="codigo">
+                 <srai>
+                     _ PIN
+                 </srai>
+             </li>
+
+         </condition>
+     </template>
+ </category>
+
+</aiml>

@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml version="2.0">
+	<!-- insert your AIML categories here -->
+	
+	    <!-- Clave -->    
+	
+	<category>
+	    <pattern>* clave *</pattern>
+	    <template>La clave para ingresar a SYGNUS es la misma con la que ingresa al portal de CREMIL</template>
+    </category>
+  	<category>
+	    <pattern>* clave</pattern>
+	    <template>La clave para ingresar a SYGNUS es la misma con la que ingresa al portal de CREMIL</template>
+    </category>
+	<category>
+	    <pattern>clave *</pattern>
+	    <template>La clave para ingresar a SYGNUS es la misma con la que ingresa al portal de CREMIL</template>
+    </category>
+    	<category>
+	    <pattern>clave</pattern>
+	    <template>La clave para ingresar a SYGNUS es la misma con la que ingresa al portal de CREMIL</template>
+    </category> 
+      <category>
+        <pattern>clabe</pattern>
+        <template><srai>clave</srai>></template>
+    </category>
+    
+    	    <!-- PIN -->    
+    
+    <category>
+	    <pattern>pin</pattern>
+	    <template> ¿Es usted afiliado?</template>
+    </category>
+    
+          <category>
+        <pattern>pink</pattern>
+        <template><srai>pin</srai>></template>
+    </category>
+    
+      <category>
+        <pattern>codigo</pattern>
+        <template><srai>pin</srai>></template>
+    </category>
+    
+    
+    	    <!-- Desembolso -->    
+    	    
+    	     <category>
+    <pattern>desembolso</pattern>
+    <template>
+        ¿Esta en proceso de compra de cartera?
+    </template>
+</category>
+    	    
+ <category>
+    <pattern>_ desembolso</pattern>
+    <template>
+        ¿Esta en proceso de compra de cartera?
+    </template>
+</category>
+
+    	<category>
+	    <pattern>* desembolso *</pattern>
+	    <template>¿Esta en proceso de compra de cartera?</template>
+    </category>
+    
+    	<category>
+	    <pattern>desembolso *</pattern>
+	    <template>¿Esta en proceso de compra de cartera?</template>
+    </category>
+         <category>
+        <pattern>desembolsen</pattern>
+        <template><srai>desembolso</srai>></template>
+    </category>
+    
+      <category>
+        <pattern>desemblosen</pattern>
+        <template><srai>desembolso</srai>></template>
+    </category>
+    
+       <category>
+        <pattern>desembolsado</pattern>
+        <template><srai>desembolso</srai>></template>
+    </category>
+    
+      <category>
+        <pattern>desembolsos</pattern>
+        <template><srai>desembolso</srai>></template>
+    </category>
+    
+       <category>
+        <pattern>desemborso</pattern>
+        <template><srai>desembolso</srai>></template>
+    </category>
+    
+        <category>
+        <pattern>desembolsado</pattern>
+        <template><srai>desembolso</srai>></template>
+    </category>
+<category>
+    <that>_ compra de cartera</that>
+    <pattern>Si</pattern>
+    <template>
+        debe revisar si la entidad libero los paz y salvos
+    </template>
+</category>
+
+<category>
+    <that>_ compra de cartera</that>
+    <pattern>No</pattern>
+    <template>
+        Si la libranza ya se encuntra confirmad debe comunicarse con la entidad para que le indique cuando le desembolsa
+    </template>
+</category>
+
+    <!-- desprendibles de pago  --> 
+    
+      <category>
+        <pattern>descargar desprendibles</pattern>
+        <template><srai>desprend</srai>></template>
+    </category>
+    
+          <category>
+        <pattern>* descargar * desprendibles *</pattern>
+        <template><srai>desprend</srai>></template>
+    </category>
+    
+            <category>
+        <pattern>desprendibles</pattern>
+        <template><srai>desprend</srai>></template>
+    </category>
+    
+              <category>
+        <pattern>* desprendibles * *</pattern>
+        <template><srai>desprend</srai>></template>
+    </category>
+    
+                <category>
+        <pattern>* desprendibles</pattern>
+        <template><srai>desprend</srai>></template>
+    </category>
+                <category>
+        <pattern>certificado</pattern>
+        <template><srai>desprend</srai>></template>
+    </category>
+
+            <category>
+        <pattern>comprobante</pattern>
+        <template><srai>desprend</srai>></template>
+    </category>
+     	    <!-- Saludo -->    
+    
+    <category>
+        <pattern>buenas tardes</pattern>
+        <template><srai>hola</srai>></template>
+    </category>
+    
+      <category>
+        <pattern>buenas noches</pattern>
+        <template><srai>hola</srai>></template>
+    </category>
+    
+      <!-- Complemento nombre -->   
+    <category>
+        <pattern>soy *</pattern>
+        <template>Bienvenido <star>index="1"</star></template>
+    </category>
+     
+     <!-- Gracias -->   
+
+<category>
+    <pattern>Gracias</pattern>
+    <template>
+        <random>
+            <li>Con gusto</li>
+            <li>Gracias por confiar en SYGNUS</li>
+            <li>Estamos para servirle</li>
+        </random>
+    </template>
+</category>
+    
+    
+    
+    
+    
+    
+    
+    
+<category>
+    <pattern>procesos</pattern>
+    <template>
+        <button>
+            <text>traslados</text>
+            <postback>traslados1</postback>
+        </button>
+        
+        <button>
+            <text>cesiones de cartera</text>
+            <postback>cesion1</postback>
+        </button>
+    </template>
+</category>
+
+<category>
+    <pattern>traslados1</pattern>
+    <template>solicitud</template>
+</category>
+<category>
+    <pattern>cesion1</pattern>
+    <template>autorizar</template>
+</category>
+<category>
+    <pattern></pattern>
+    <template></template>
+</category>
+<category>
+    <pattern>Click node to edit pattern</pattern>
+    <template>Click node to edit template</template>
+</category>
+</aiml>

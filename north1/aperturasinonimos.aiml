@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml version="2.0">
+    	<!-- Sinonimos de apertura de plataforma -->   
+      	
+      	
+ 	<category>
+	    <pattern>_ ABRE * *</pattern>
+	    <template>
+	        <srai>Aperplat</srai>
+	    </template>
+    </category>
+    
+    
+     <category>
+	    <pattern>_ HABILITAN * *</pattern>
+	    <template>
+	        <srai>Aperplat</srai>
+	    </template>
+    </category>
+    
+     <category>
+	    <pattern>_ APERTURA DE * *</pattern>
+	    <template>
+	        <srai>Aperplat</srai>
+	    </template>
+    </category>
+    
+
+</aiml>

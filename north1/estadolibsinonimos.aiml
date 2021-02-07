@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml version="2.0">
+     	<!-- Sinonimos de ver estado de libranza -->   
+     	
+     	
+  <category>
+     <pattern>NO HAN CARGADO  * *</pattern>
+     <template>
+         <think><set name="libranza"><star index= "2"/></set></think>
+         <condition name="libranza" >
+             <li value="libranza">
+                 <srai>
+                     Consulcre
+                 </srai>
+             </li>
+             
+            <li value="libransa">
+                 <srai>
+                     Consulcre
+                 </srai>
+             </li>
+             
+            <li value="libransas">
+                 <srai>
+                     Consulcre
+                 </srai>
+             </li>
+
+         </condition>
+     </template>
+ </category>     	
+     	
+     	
+  <category>
+     <pattern>EN QUE ESTADO * * *</pattern>
+     <template>
+         <think><set name="libranza"><star index= "3"/></set></think>
+         <condition name="libranza" >
+             <li value="libranza">
+                 <srai>
+                     Consulcre
+                 </srai>
+             </li>
+             
+            <li value="libransa">
+                 <srai>
+                     Consulcre
+                 </srai>
+             </li>
+             
+            <li value="libransas">
+                 <srai>
+                     Consulcre
+                 </srai>
+             </li>
+
+         </condition>
+     </template>
+ </category> 
+
+  <category>
+     <pattern>CUAL ES EL ESTADO * * *</pattern>
+     <template>
+         <think><set name="libranza"><star index= "3"/></set></think>
+         <condition name="libranza" >
+             <li value="libranza">
+                 <srai>
+                     Consulcre
+                 </srai>
+             </li>
+             
+            <li value="libransa">
+                 <srai>
+                     Consulcre
+                 </srai>
+             </li>
+             
+            <li value="libransas">
+                 <srai>
+                     Consulcre
+                 </srai>
+             </li>
+
+         </condition>
+     </template>
+ </category> 
+ 
+   <category>
+     <pattern>NO HAN APROBADO * *</pattern>
+     <template>
+         <think><set name="libranza"><star index= "3"/></set></think>
+         <condition name="libranza" >
+             <li value="libranza">
+                 <srai>
+                     Consulcre
+                 </srai>
+             </li>
+             
+            <li value="libransa">
+                 <srai>
+                     Consulcre
+                 </srai>
+             </li>
+             
+            <li value="libransas">
+                 <srai>
+                     Consulcre
+                 </srai>
+             </li>
+
+         </condition>
+     </template>
+ </category> 
+    
+    
+
+</aiml>

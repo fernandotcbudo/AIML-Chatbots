@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml version="2.0">
+    	<!-- Sinonimos de clave sygnus -->   
+     	
+  <category>
+     <pattern> CUAL ES MI CONTRASENA *</pattern>
+     <template>
+         <think><set name="clave"><star index= "1"/></set></think>
+         <condition name="clave" >
+             <li value="cremil">Señor afiliado la clave de CREMIL la puede consultar en la web</li>
+             <li value="sygnus">Señor afiliado la clave de SYGNUS es la misma de CREMIL</li>
+             <li value="signus">Señor afiliado la clave de SYGNUS es la misma de CREMIL</li>
+         </condition>
+     </template>
+ </category>
+ 
+   <category>
+     <pattern> CUAL ES MI CONTRASEÑA *</pattern>
+     <template>
+         <think><set name="clave"><star index= "1"/></set></think>
+         <condition name="clave" >
+             <li value="cremil">Señor afiliado la clave de CREMIL la puede consultar en la web</li>
+             <li value="sygnus">Señor afiliado la clave de SYGNUS es la misma de CREMIL</li>
+             <li value="signus">Señor afiliado la clave de SYGNUS es la misma de CREMIL</li>
+         </condition>
+     </template>
+ </category>
+ 
+    <category>
+     <pattern> CÑAVE *</pattern>
+     <template>
+         <think><set name="clave"><star index= "1"/></set></think>
+         <condition name="clave" >
+             <li value="cremil">Señor afiliado la clave de CREMIL la puede consultar en la web</li>
+             <li value="sygnus">Señor afiliado la clave de SYGNUS es la misma de CREMIL</li>
+             <li value="signus">Señor afiliado la clave de SYGNUS es la misma de CREMIL</li>
+         </condition>
+     </template>
+ </category>
+ 
+    <category>
+     <pattern> CUAL ES MI CONTRASEÑA *</pattern>
+     <template>
+         <think><set name="clave"><star index= "1"/></set></think>
+         <condition name="clave" >
+             <li value="cremil">Señor afiliado la clave de CREMIL la puede consultar en la web</li>
+             <li value="sygnus">Señor afiliado la clave de SYGNUS es la misma de CREMIL</li>
+             <li value="signus">Señor afiliado la clave de SYGNUS es la misma de CREMIL</li>
+         </condition>
+     </template>
+ </category>   
+ 
+    <category>
+     <pattern> CONTRASEÑA *</pattern>
+     <template>
+         <think><set name="clave"><star index= "1"/></set></think>
+         <condition name="clave" >
+             <li value="cremil">Señor afiliado la clave de CREMIL la puede consultar en la web</li>
+             <li value="sygnus">Señor afiliado la clave de SYGNUS es la misma de CREMIL</li>
+             <li value="signus">Señor afiliado la clave de SYGNUS es la misma de CREMIL</li>
+         </condition>
+     </template>
+ </category>   
+ 
+ 
+ <category>
+     <pattern> CUAL ES MI USUARIO *</pattern>
+     <template>
+         <think><set name="clave"><star index= "1"/></set></think>
+         <condition name="clave" >
+             <li value="cremil">Señor afiliado el usuario de CREMIL es su cedula de ciudadania </li>
+             <li value="sygnus">Señor afiliado el usuario de SYGNUS es su cedula de ciudadania</li>
+             <li value="signus">Señor afiliado la clave de SYGNUS es la misma de CREMIL</li>
+         </condition>
+     </template>
+ </category>
+ 
+  <category>
+     <pattern> SE ME OLVIDO LA * *</pattern>
+     <template>
+         <think><set name="clave"><star index= "2"/></set></think>
+         <condition name="clave" >
+             <li value="cremil">Señor afiliado el usuario de CREMIL es su cedula de ciudadania </li>
+             <li value="sygnus">Señor afiliado el usuario de SYGNUS es su cedula de ciudadania</li>
+             <li value="signus">Señor afiliado la clave de SYGNUS es la misma de CREMIL</li>
+         </condition>
+     </template>
+ </category>
+ 
+   <category>
+     <pattern> NO TENGO LA * *</pattern>
+     <template>
+         <think><set name="clave"><star index= "2"/></set></think>
+         <condition name="clave" >
+             <li value="cremil">Señor afiliado el usuario de CREMIL es su cedula de ciudadania </li>
+             <li value="sygnus">Señor afiliado el usuario de SYGNUS es su cedula de ciudadania</li>
+             <li value="signus">Señor afiliado la clave de SYGNUS es la misma de CREMIL</li>
+         </condition>
+     </template>
+ </category>
+ 
+    <category>
+     <pattern> COMO SOLICITO LA * *</pattern>
+     <template>
+         <think><set name="clave"><star index= "2"/></set></think>
+         <condition name="clave" >
+             <li value="cremil">Señor afiliado el usuario de CREMIL es su cedula de ciudadania </li>
+             <li value="sygnus">Señor afiliado el usuario de SYGNUS es su cedula de ciudadania</li>
+             <li value="signus">Señor afiliado la clave de SYGNUS es la misma de CREMIL</li>
+         </condition>
+     </template>
+ </category>
+ 
+     <category>
+     <pattern> NO SE CUAL ES LA * *</pattern>
+     <template>
+         <think><set name="clave"><star index= "2"/></set></think>
+         <condition name="clave" >
+             <li value="cremil">Señor afiliado el usuario de CREMIL es su cedula de ciudadania </li>
+             <li value="sygnus">Señor afiliado el usuario de CREMIL es su cedula de ciudadania</li>
+             <li value="signus">Señor afiliado la clave de SYGNUS es la misma de CREMIL</li>
+         </condition>
+     </template>
+ </category>
+ 
+ 
+ 
+
+</aiml>
