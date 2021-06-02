@@ -1,0 +1,471 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml version="2.0">
+    
+
+    	<!-- Preguntas complejas  pin -->	
+
+  <category>
+     <pattern>BUENOS DIAS ES QUE NO ME HA LLEGADO * *</pattern>
+     <template>
+         <think><set name="pin"><star index= "2"/></set></think>
+         <condition name="pin" >
+    
+             <li value="pink">
+                 <srai>
+                    Obtenerpin
+                 </srai>
+             </li>
+             
+            <li value="pin">
+                 <srai>
+                     Obtenerpin
+                 </srai>
+             </li>
+             
+            <li value="pun">
+                 <srai>
+                     Obtenerpin
+                 </srai>
+             </li>
+             
+            <li value="codigo">
+                 <srai>
+                     Obtenerpin
+                 </srai>
+             </li>
+
+         </condition>
+     </template>
+ </category>    	
+    	
+    	
+  <category>
+     <pattern>BUENOS DIAS COMO HAGO PARA OBTENER * *</pattern>
+     <template>
+         <think><set name="pin"><star index= "2"/></set></think>
+         <condition name="pin" >
+    
+             <li value="pink">
+                 <srai>
+                    Obtenerpin
+                 </srai>
+             </li>
+             
+            <li value="pin">
+                 <srai>
+                     Obtenerpin
+                 </srai>
+             </li>
+             
+            <li value="pun">
+                 <srai>
+                     Obtenerpin
+                 </srai>
+             </li>
+             
+            <li value="codigo">
+                 <srai>
+                     Obtenerpin
+                 </srai>
+             </li>
+
+         </condition>
+     </template>
+ </category>    	
+    	
+    	
+  <category>
+     <pattern>ESTOY * UNA LIBRANZA Y NO ME HA LLEGADO * *</pattern>
+     <template>
+         <think><set name="pin"><star index= "3"/></set></think>
+         <condition name="pin" >
+    
+             <li value="pink">
+                 <srai>
+                    Obtenerpin
+                 </srai>
+             </li>
+             
+            <li value="pin">
+                 <srai>
+                     Obtenerpin
+                 </srai>
+             </li>
+             
+            <li value="pun">
+                 <srai>
+                     Obtenerpin
+                 </srai>
+             </li>
+             
+            <li value="codigo">
+                 <srai>
+                     Obtenerpin
+                 </srai>
+             </li>
+
+         </condition>
+     </template>
+ </category>    
+    	
+    
+    	<!-- Sinonimos de pin -->	
+    	
+    	
+  <category>
+     <pattern>NO ME HA LLEGADO * *</pattern>
+     <template>
+         <think><set name="pin"><star index= "2"/></set></think>
+         <condition name="pin" >
+             
+             <li value="pin">
+                 <srai>
+                     Obtenerpin
+                 </srai>
+             </li>
+             
+             
+             <li value="pink">
+                 <srai>
+                     Obtenerpin
+                 </srai>
+             </li>
+             
+            <li value="pun">
+                 <srai>
+                     Obtenerpin
+                 </srai>
+             </li>
+             
+            <li value="codigo">
+                 <srai>
+                     Obtenerpin
+                 </srai>
+             </li>
+
+         </condition>
+     </template>
+ </category>
+    	
+
+  <category>
+     <pattern>BUENOS DIAS NECESITO * *</pattern>
+     <template>
+         <think><set name="pin"><star index= "2"/></set></think>
+         <condition name="pin" >
+             
+              <li value="pin">
+                 <srai>
+                     Obtenerpin
+                 </srai>
+             </li>
+             
+             
+             <li value="pink">
+                 <srai>
+                     Obtenerpin
+                 </srai>
+             </li>
+             
+            <li value="pun">
+                 <srai>
+                     Obtenerpin
+                 </srai>
+             </li>
+             
+            <li value="codigo">
+                 <srai>
+                     Obtenerpin
+                 </srai>
+             </li>
+
+         </condition>
+     </template>
+ </category>    	
+
+
+
+  <category>
+     <pattern>NECESITO * *</pattern>
+     <template>
+         <think><set name="pin"><star index= "2"/></set></think>
+         <condition name="pin" >
+             
+             <li value="pin">
+                 <srai>
+                     Obtenerpin
+                 </srai>
+             </li>
+             
+             
+             <li value="pink">
+                 <srai>
+                     Obtenerpin
+                 </srai>
+             </li>
+             
+            <li value="pun">
+                 <srai>
+                     Obtenerpin
+                 </srai>
+             </li>
+             
+            <li value="codigo">
+                 <srai>
+                     Obtenerpin
+                 </srai>
+             </li>
+
+         </condition>
+     </template>
+ </category>
+ 
+   <category>
+     <pattern>COMO HAGO PARA * * *</pattern>
+     <template>
+         <think><set name="pin"><star index= "3"/></set></think>
+         <condition name="pin" >
+             
+             <li value="pin">
+                 <srai>
+                     Obtenerpin
+                 </srai>
+             </li>
+             
+             
+             
+             <li value="pink">
+                 <srai>
+                     Obtenerpin
+                 </srai>
+             </li>
+             
+            <li value="pun">
+                 <srai>
+                     Obtenerpin
+                 </srai>
+             </li>
+             
+            <li value="codigo">
+                 <srai>
+                     Obtenerpin
+                 </srai>
+             </li>
+
+         </condition>
+     </template>
+ </category>
+	
+
+   <category>
+     <pattern>ME LLEGA EL MENSAJE PERO NO EL *</pattern>
+     <template>
+         <think><set name="pin"><star index= "1"/></set></think>
+         <condition name="pin" >
+             
+             <li value="pin">
+                 <srai>
+                     Mensajesinpin
+                 </srai>
+             </li>
+             
+             
+             
+             <li value="pink">
+                 <srai>
+                     Mensajesinpin
+                 </srai>
+             </li>
+             
+            <li value="pun">
+                 <srai>
+                     Mensajesinpin
+                 </srai>
+             </li>
+             
+            <li value="codigo">
+                 <srai>
+                     Mensajesinpin
+                 </srai>
+             </li>
+
+         </condition>
+     </template>
+ </category>
+		
+	
+
+  <category>
+     <pattern>NO ME HA LLEGADO * * DE CONFIRMACION</pattern>
+     <template>
+         <think><set name="pin"><star index= "2"/></set></think>
+         <condition name="pin" >
+             
+            <li value="pin">
+                 <srai>
+                     Obtenerpin
+                 </srai>
+             </li>
+             
+             
+             
+             <li value="pink">
+                 <srai>
+                     Obtenerpin
+                 </srai>
+             </li>
+             
+            <li value="pun">
+                 <srai>
+                     Obtenerpin
+                 </srai>
+             </li>
+             
+            <li value="codigo">
+                 <srai>
+                     Obtenerpin
+                 </srai>
+             </li>
+
+         </condition>
+     </template>
+ </category>
+ 
+   <category>
+     <pattern>NO ME HA LLEGADO * * DE SIGNUS</pattern>
+     <template>
+         <think><set name="pin"><star index= "2"/></set></think>
+         <condition name="pin" >
+             
+             <li value="pin">
+                 <srai>
+                     Obtenerpin
+                 </srai>
+             </li>
+             
+             
+             
+             <li value="pink">
+                 <srai>
+                     Obtenerpin
+                 </srai>
+             </li>
+             
+            <li value="pun">
+                 <srai>
+                     Obtenerpin
+                 </srai>
+             </li>
+             
+            <li value="codigo">
+                 <srai>
+                     Obtenerpin
+                 </srai>
+             </li>
+
+         </condition>
+     </template>
+ </category>
+ 
+    <category>
+     <pattern>NO ME ENVIARON * * </pattern>
+     <template>
+         <think><set name="pin"><star index= "2"/></set></think>
+         <condition name="pin" >
+             
+            <li value="pin">
+                 <srai>
+                     Obtenerpin
+                 </srai>
+             </li>
+             
+             
+             
+             <li value="pink">
+                 <srai>
+                     Obtenerpin
+                 </srai>
+             </li>
+             
+            <li value="pun">
+                 <srai>
+                     Obtenerpin
+                 </srai>
+             </li>
+             
+            <li value="codigo">
+                 <srai>
+                     Obtenerpin
+                 </srai>
+             </li>
+
+         </condition>
+     </template>
+ </category>
+
+    
+    <category>
+	    <pattern>_ REGISTRAR * PIN</pattern>
+	    <template>
+	        <srai>Confirmarpin</srai>
+	    </template>
+    </category>
+    
+    <category>
+	    <pattern>_ CONFIRMAR * PIN</pattern>
+	    <template>
+	        <srai>Confirmarpin</srai>
+	    </template>
+    </category>
+    
+    
+       <category>
+     <pattern>NO ME LLEGA  * *</pattern>
+     <template>
+         <think><set name="pin"><star index= "2"/></set></think>
+         <condition name="pin" >
+             
+             <li value="pin">
+                 <srai>
+                     Obtenerpin
+                 </srai>
+             </li>
+             
+             
+             
+             <li value="pink">
+                 <srai>
+                     Obtenerpin
+                 </srai>
+             </li>
+             
+            <li value="pun">
+                 <srai>
+                     Obtenerpin
+                 </srai>
+             </li>
+             
+            <li value="codigo">
+                 <srai>
+                     Obtenerpin
+                 </srai>
+             </li>
+
+         </condition>
+     </template>
+ </category>
+ 
+ 
+       	<!-- Postbacks Mensaje sin pin  -->
+ 
+ <category>
+    <pattern>Mensajesinpin</pattern>
+    <template>
+        Cuando le llegue un mensaje SMS indicando que su libranza fue cargada, pero no aparece el numero del pin en ningún lugar, quiere decir que usted ha creado una Autorización a la entidad operadora de libranza y que se encuentra en un proceso de compra de cartera.
+        <br/>
+        <br/>
+        Al usted crear la autorización, el operador de libranza es el encargado de confirmar la novedad.
+    </template>
+</category>
+
+</aiml>

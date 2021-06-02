@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml version="2.0">
+    	<!-- Sinonimos de apertura de plataforma -->   
+    	
+    	
+  <category>
+     <pattern>CUANDO * LA *</pattern>
+     <template>
+         <think><set name="apertura"><star index= "1"/></set></think>
+         <condition name="apertura" >
+             <li value="abren">
+                 <srai>
+                     Aperplat
+                 </srai>
+             </li>
+             
+            <li value="habilitan">
+                 <srai>
+                     Aperplat
+                 </srai>
+             </li>
+             
+            <li value="abilitan">
+                 <srai>
+                     Aperplat
+                 </srai>
+             </li>
+             
+            <li value="habolitan">
+                 <srai>
+                     Aperplat
+                 </srai>
+             </li>
+
+         </condition>
+     </template>
+ </category>
+    	
+ <category>
+     <pattern>CUANDO ES LA * DE LA *</pattern>
+     <template>
+         <think><set name="apertura"><star index= "1"/></set></think>
+         <condition name="apertura" >
+             <li value="apertura">
+                 <srai>
+                     Aperplat
+                 </srai>
+             </li>
+             
+            <li value="habilitacion">
+                 <srai>
+                     Aperplat
+                 </srai>
+             </li>
+            
+
+         </condition>
+     </template>
+ </category>
+    	
+
+<category>
+     <pattern>CUANDO * PLATAFORMA</pattern>
+     <template>
+         <think><set name="apertura"><star index= "1"/></set></think>
+         <condition name="apertura" >
+             <li value="abre">
+                 <srai>
+                     Aperplat
+                 </srai>
+             </li>
+             
+            <li value="habilitan">
+                 <srai>
+                     Aperplat
+                 </srai>
+             </li>
+             
+            <li value="abilitan">
+                 <srai>
+                     Aperplat
+                 </srai>
+             </li>
+             
+            <li value="habolitan">
+                 <srai>
+                     Aperplat
+                 </srai>
+             </li>
+
+         </condition>
+     </template>
+ </category>
+
+
+  <category>
+     <pattern>EN QUE FECHA * LA *</pattern>
+     <template>
+         <think><set name="apertura"><star index= "1"/></set></think>
+         <condition name="apertura" >
+             <li value="abren">
+                 <srai>
+                     Aperplat
+                 </srai>
+             </li>
+             
+            <li value="habilitan">
+                 <srai>
+                     Aperplat
+                 </srai>
+             </li>
+             
+            <li value="abilitan">
+                 <srai>
+                     Aperplat
+                 </srai>
+             </li>
+             
+            <li value="habolitan">
+                 <srai>
+                     Aperplat
+                 </srai>
+             </li>
+             
+            <li value="abre">
+                 <srai>
+                     Aperplat
+                 </srai>
+             </li>
+
+
+         </condition>
+     </template>
+ </category>
+    	
+
+  <category>
+     <pattern>QUE DIA * LA *</pattern>
+     <template>
+         <think><set name="apertura"><star index= "1"/></set></think>
+         <condition name="apertura" >
+             <li value="abren">
+                 <srai>
+                     Aperplat
+                 </srai>
+             </li>
+             
+            <li value="habilitan">
+                 <srai>
+                     Aperplat
+                 </srai>
+             </li>
+             
+            <li value="abilitan">
+                 <srai>
+                     Aperplat
+                 </srai>
+             </li>
+             
+            <li value="habolitan">
+                 <srai>
+                     Aperplat
+                 </srai>
+             </li>
+
+         </condition>
+     </template>
+ </category>
+      	
+
+  <category>
+     <pattern>ES PARA SABER CUANDO * LA *</pattern>
+     <template>
+         <think><set name="apertura"><star index= "1"/></set></think>
+         <condition name="apertura" >
+             <li value="abren">
+                 <srai>
+                     Aperplat
+                 </srai>
+             </li>
+             
+            <li value="habilitan">
+                 <srai>
+                     Aperplat
+                 </srai>
+             </li>
+             
+            <li value="abilitan">
+                 <srai>
+                     Aperplat
+                 </srai>
+             </li>
+             
+            <li value="habolitan">
+                 <srai>
+                     Aperplat
+                 </srai>
+             </li>
+
+         </condition>
+     </template>
+ </category>
+ 
+ 
+ 
+   <category>
+     <pattern>EN QUE FECHAS * LA *</pattern>
+     <template>
+         <think><set name="apertura"><star index= "1"/></set></think>
+         <condition name="apertura" >
+             <li value="abren">
+                 <srai>
+                     Aperplat
+                 </srai>
+             </li>
+             
+            <li value="habilitan">
+                 <srai>
+                     Aperplat
+                 </srai>
+             </li>
+             
+            <li value="abilitan">
+                 <srai>
+                     Aperplat
+                 </srai>
+             </li>
+             
+            <li value="habolitan">
+                 <srai>
+                     Aperplat
+                 </srai>
+             </li>
+
+         </condition>
+     </template>
+ </category>
+      	
+      	
+
+</aiml>

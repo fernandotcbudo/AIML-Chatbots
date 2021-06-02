@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml version="2.0">
+    	<!-- Sinonimos ingreso al pb  -->
+
+<category>
+     <pattern>COMO HAGO PARA * UN * </pattern>
+     <template>
+         <think><set name="apertura"><star index= "1"/></set></think>
+         <condition name="apertura" >
+             <li value="cancelar">
+                 <srai>
+                     Ingresarpor
+                 </srai>
+             </li>
+             
+            <li value="suspender">
+                 <srai>
+                     Ingresarpor
+                 </srai>
+             </li>
+
+         </condition>
+     </template>
+ </category>
+ 
+ <category>
+     <pattern>COMO HAGO PARA * UNA * </pattern>
+     <template>
+         <think><set name="apertura"><star index= "1"/></set></think>
+         <condition name="apertura" >
+             <li value="cancelar">
+                 <srai>
+                     Ingresarpor
+                 </srai>
+             </li>
+             
+            <li value="suspender">
+                 <srai>
+                     Ingresarpor
+                 </srai>
+             </li>
+
+         </condition>
+     </template>
+ </category>
+ 
+ <category>
+     <pattern>QUE HAGO PARA * UN * </pattern>
+     <template>
+         <think><set name="apertura"><star index= "1"/></set></think>
+         <condition name="apertura" >
+             <li value="cancelar">
+                 <srai>
+                     Ingresarpor
+                 </srai>
+             </li>
+             
+            <li value="suspender">
+                 <srai>
+                     Ingresarpor
+                 </srai>
+             </li>
+
+         </condition>
+     </template>
+ </category>
+ 
+  <category>
+     <pattern>QUE HAGO PARA * UNA * </pattern>
+     <template>
+         <think><set name="apertura"><star index= "1"/></set></think>
+         <condition name="apertura" >
+             <li value="cancelar">
+                 <srai>
+                     Ingresarpor
+                 </srai>
+             </li>
+             
+            <li value="suspender">
+                 <srai>
+                     Ingresarpor
+                 </srai>
+             </li>
+
+         </condition>
+     </template>
+ </category>
+ 
+ 
+   <category>
+     <pattern>QUIERO * UNA * </pattern>
+     <template>
+         <think><set name="apertura"><star index= "1"/></set></think>
+         <condition name="apertura" >
+             <li value="cancelar">
+                 <srai>
+                     Ingresarpor
+                 </srai>
+             </li>
+             
+            <li value="suspender">
+                 <srai>
+                     Ingresarpor
+                 </srai>
+             </li>
+
+         </condition>
+     </template>
+ </category>
+ 
+    <category>
+     <pattern>QUIERO * UN * </pattern>
+     <template>
+         <think><set name="apertura"><star index= "1"/></set></think>
+         <condition name="apertura" >
+             <li value="cancelar">
+                 <srai>
+                     Ingresarpor
+                 </srai>
+             </li>
+             
+            <li value="suspender">
+                 <srai>
+                     Ingresarpor
+                 </srai>
+             </li>
+
+         </condition>
+     </template>
+ </category>
+ 
+</aiml>

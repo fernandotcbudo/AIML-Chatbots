@@ -1,0 +1,782 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml  version="2.0">
+    
+    <!-- Respuesta cuando hay un input desconocido -->    
+  <category>
+    <pattern>*</pattern>
+    <template>
+        Por favor seleccione qué tipo de usuario es:
+        <button>
+            <text>Afiliado</text>
+            <postback>Soyafiliado</postback>
+        </button>
+        
+        <button>
+            <text>Operador</text>
+            <postback>Soyoperador</postback>
+        </button>
+    </template>
+  </category>
+  
+     <!-- Saludo inicial (padre), donde se usan botones -->  
+ <category>
+     <pattern>_ DIAS</pattern>
+     <template>
+         Bienvenido a SYGNUS, Por favor seleccione qué tipo de usuario es:
+         <button>
+            <text>Afiliado</text>
+            <postback>Soyafiliado</postback>
+        </button>
+        
+        <button>
+            <text>Operador</text>
+            <postback>Soyoperador</postback>
+        </button>
+     </template>
+ </category>
+ 
+  <!-- Postsbacks unidos a los botones de Saludo inicial (Afiliados) -->  
+ 
+ <category>
+     <pattern>Soyafiliado</pattern>
+     <template>
+         Señor/a afiliado escoja la opción adecuada
+         <button>
+            <text>Solicitar crédito</text>
+            <postback>Solicredito</postback>
+        </button>
+        
+        <button>
+            <text>Confirmar crédito</text>
+            <postback>Conficre</postback>
+        </button>
+        
+        <button>
+            <text>Consultar el estado del crédito</text>
+            <postback>Consulcre</postback>
+        </button>
+        
+        <button>
+            <text>Otras solicitudes</text>
+            <postback>Otro</postback>
+        </button>
+        
+        <button>
+            <text>Menu inical</text>
+            <postback>_ DIAS</postback>
+        </button>
+        
+        
+     </template>
+</category>
+
+  <!-- Postsbacks afiliados Solicitar credito -->  
+
+
+<category>
+    <pattern>Solicredito</pattern>
+    <template>
+        Señor/a afiliado elija la opción adecuada:
+        <button>
+            <text>Solicitar credito</text>
+            <postback>SolicreditoF</postback>
+        </button>
+        
+        <button>
+            <text>Recuperar clave</text>
+            <postback>Recuperacla</postback>
+        </button>
+        
+        <button>
+            <text>Actualizar datos</text>
+            <postback>Actuadatos</postback>
+        </button>
+        
+        <button>
+            <text>Crear autorización</text>
+            <postback>Creauto</postback>
+        </button>
+        
+        <button>
+            <text>Menu principal</text>
+            <postback>Soyafiliado</postback>
+        </button>
+        
+    </template>
+</category>
+
+
+<category>
+    <pattern>SolicreditoF</pattern>
+    <template>
+        <ol>
+            <li>Primero debe tener su clave correspondiente y actualizar sus datos. Posteriormente debe acercarse a cualquier Entidad operadora de libranza de su elección (Banco, cooperativa, aseguradora), para firmar la libranza.<br/>
+            <link>
+                <text>Portal Cremil</text>
+                <url>https://www.cremil.gov.co/</url>
+            </link>
+            </li>
+            <li>Igualmente debe autorizarlo, por medio de la plataforma SYGNUS ( portal beneficiario) , para que consulte su capacidad de endeudamiento (Autorizaciones).<br/>
+            <link>
+                <text>Portal Beneficiario</text>
+                <url>https://www.sygnus.co/PortaldelBeneficiarioCremil/Buscar/Index</url>
+            </link>
+            </li>
+            <li>Por ultimo, el mismo Operador de Libranza, debe registrar las condiciones del descuento en el sistema y usted debe aprobarlo, para que aplique en su nómina, o rechazarlo por medio del PIN de confirmación.<br/>
+            <link>
+                <text>Ver estado</text>
+                <url>https://www.sygnus.co/PortaldelBeneficiarioCremil/Buscar/Index</url>
+            </link>
+            </li>
+        </ol>
+    </template>
+</category>
+
+<category>
+    <pattern>Recuperacla</pattern>
+    <template>
+        Para recuperar la clave de acceso al portal de CREMIL deberá ingresar al siguiente enlace:
+        <link>
+            <text>Recordar clave</text>
+            <url>https://www.cremil.gov.co/</url>
+        </link> o comunicarse directamente con su pagaduria en el siguiente teléfono:
+        
+        LÍNEA GRATUITA DE ATENCIÓN EN TODO EL PAÍS
+        01 8000 912090
+        PBX(57) (1) 3537300
+        
+        <button>
+            <text>Video explicativo</text>
+            <url>https://youtu.be/tCjV29ozE3U</url>
+        </button>
+    
+        <button>
+            <text>Portal beneficiario</text>
+            <url>https://www.sygnus.co/PortaldelBeneficiarioCremil/Buscar/Index</url>
+        </button>
+        
+    </template>
+</category>
+
+<category>
+    <pattern>Actuadatos</pattern>
+    <template>
+        Para actualizar los datos debe ingresar a la pagina de Cremil, o clic en el siguiente link:
+        <link>
+            <text>Actualizar datos</text>
+            <url>https://www.cremil.gov.co/index.php?idcategoria=13215</url>
+        </link>
+        Debe ingresar con su usuario y su contraseña. Recuerde guardar los cambios. 
+        La información que se registra en este portal es la misma que necesita para tramitar su libranza en la plataforma SYGNUS.
+        
+        Si no es posible actualizar datos debe comunicarse directamente con CREMIL.
+    </template>
+</category>
+
+<category>
+    <pattern>Creauto</pattern>
+    <template>
+        En SYGNUS, la autorización es un proceso realizado por el beneficiario, por medio del cual, previamente autoriza, al Operador de libranza a que realice algún procedimiento en la plataforma sin su presencia.
+
+        Por ejemplo consultar su capacidad de endeudamiento sin necesidad de entregar su clave personal. Es lo mas importante para el tramite de su libranza.
+        <ul>
+            <li>Debe ingresar al " portal del beneficiario". Digita su cédula y su clave correspondiente. Clic en la pagaduría a la que pertenece para ingresar:</li>
+            <link>
+                <text>Portal beneficiario</text>
+                <url>https://www.sygnus.co/PlataformaSygnus/</url>
+            </link>
+            <li>Selecciona la opción " autorizaciones" filtra por la entidad con la que esta tramitando el crédito y selecciona el tipo de autorización. Por favor acepte los términos y condiciones y da clic en guardar.</li>
+        </ul>    
+        <image>https://api.asm.skype.com/v1/objects/0-eus-d19-ff96eb8bba3741896aa73966d0aa9c44/views/imgpsh_fullsize_anim</image>
+        
+    </template>
+</category>
+
+
+  <!-- Postsbacks afiliados Confirmar credito -->  
+
+
+
+<category>
+    <pattern>Conficre</pattern>
+    <template>
+        Señor/a afiliado digite el número de la opcion adecuada
+        
+        <button>
+            <text>Obtener PIN de confirmación</text>
+            <postback>Obtenerpin</postback>
+        </button>
+        
+        <button>
+            <text>Confirmar el PIN de confirmación</text>
+            <postback>Confirmarpin</postback>
+        </button>
+        
+        <button>
+            <text>Menu principal</text>
+            <postback>Soyafiliado</postback>
+        </button>
+    </template>
+</category>
+
+
+<category>
+    <pattern>Obtenerpin</pattern>
+    <template>El PIN es un código de seguridad de 5 dígitos (numérico) que permite al beneficiario confirmar su descuento. 
+    Se genera cuando el Operador de Libranza (Banco, Cooperativa, Asociación) carga la novedad de libranza en la plataforma SYGNUS y este es enviado automáticamente a su celular y correo registrado. 
+    Tiene una validez de 48 horas, si no se confirma se anula automáticamente.
+    <image>https://www.sygnus.co/sygnuscremil/ftpimagenes/plantillas/PIn%20numeros.png</image>
+    </template>
+</category>
+
+<category>
+    <pattern>Confirmarpin</pattern>
+    <template>
+        Si recibió el mensaje con el PIN a su correo y/o celular y está de acuerdo con las condiciones del crédito, por favor regístrelo por uno de los 3 medios antes de 48 horas.
+        <br/>
+        <button>
+            <text>Portal web</text>
+            <postback>Confirpor</postback>
+        </button>
+        
+        <button>
+            <text>Mensaje de texto</text>
+            <postback>Confirmens</postback>
+        </button>
+        
+        <button>
+            <text>Call center</text>
+            <postback>Confircall</postback>
+        </button>
+        <br/>
+        Comuníquese con el operador de libranza para finalizar el proceso y que genere el desembolso.Para validar el estado de su libranza debe ingresar a la opción " mi dispo".
+    </template>
+</category>
+
+
+<category>
+    <pattern>Confirpor</pattern>
+    <template>
+        Ingrese al siguiente enlace:
+            <br/>   
+            <link>
+                <text>Portal beneficiario</text>
+                <url>https://www.sygnus.co/PortaldelBeneficiarioCremil/Buscar/Index</url>
+            </link>
+            <br/>
+        Registre su cédula, la clave personal del portal de CREMIL, y clic en la opción de confirmar PIN.
+    </template>
+</category>
+
+
+<category>
+    <pattern>Confirmens</pattern>
+    <template>
+        Responda desde su celular por mensaje de texto al 890410 la palabra sgcremil (numero de pin). Ejemplo: sgcremil12345
+        <image>https://www.sygnus.co/sygnuscremil/ftpimagenes/plantillas/sms%20ejemplo%20cremil.PNG</image>
+    </template>
+</category>
+
+
+<category>
+    <pattern>Confircall</pattern>
+    <template>Comuníquese al (1) 3598060 o 333 033 31 23: registre su cedula, la opción uno (1) de confirmar libranza y por ultimo el numero del PIN.</template>
+</category>
+
+  <!-- Postsbacks afiliados Consultar el estado del credito -->  
+
+
+<category>
+    <pattern>Consulcre</pattern>
+    <template>
+        Señor/a afiliado digite el número de la opcion adecuada
+        
+        <button>
+            <text>Ingresar al portal del beneficiario</text>
+            <postback>Ingresarpor</postback>
+        </button>
+        
+        <button>
+            <text>Libranza de compras de cartera</text>
+            <postback>Libcompras</postback>
+        </button>
+        
+        <button>
+            <text>Menu principal</text>
+            <postback>Soyafiliado</postback>
+        </button>
+    </template>
+</category>
+
+
+<category>
+    <pattern>Ingresarpor</pattern>
+    <template>
+        Para que le deje de aplicar algún descuento en su nómina, es porque usted se encuentra a paz y salvo, debe comunicarse directamente con el operador (banco, cooperativa, asociación,club) para que registre la cancelación en el sistema.
+        <br/>
+        <br/>
+        Para validar si el operador registro la cancelación consulte en en el portal beneficiario por medio de " mi dispo" / Ultimas Libranzas.
+        <button>
+            <text>Portal Beneficiario</text>
+            <url>https://www.sygnus.co/PortaldelBeneficiarioCremil/Buscar/Index</url>
+        </button>
+    </template>
+</category>
+
+<category>
+    <pattern>Libcompras</pattern>
+    <template>
+        Si esta en proceso de compra de cartera, la entidad que vende debe liberar el descuento por medio de la plataforma SYGNUS, de lo contrario no puede ingresar el nuevo descuento y se debe volver a registrar en el siguiente periodo.
+
+        Para validar el estado de su  compra de cartera por favor ingrese al portal beneficiario y valide en la opción " mi dispo" en paz y salvos. La entidad que compra cartera debe subir los soportes de pago y la entidad que vende liberar el descuento.
+        <button>
+            <text>
+                Portal beneficiario
+            </text>
+            <url>https://www.sygnus.co/PortaldelBeneficiarioCremil/Buscar/Index</url>
+        </button>
+    </template>
+</category>
+
+
+ <!-- Postsbacks afiliados Otros -->  
+
+
+<category>
+    <pattern>Otro</pattern>
+    <template>
+        Señor/a operador digite el número de la opcion adecuada
+        
+        <button>
+            <text>Apertura de la plataforma</text>
+            <postback>Aperplat</postback>
+        </button>
+        
+        <button>
+            <text>Cancelar descuentos</text>
+            <postback>Canceldes</postback>
+        </button>
+        
+        <button>
+            <text>Descargar despredibles</text>
+            <postback>desprend</postback>
+        </button>
+        
+        <button>
+            <text>Menu principal</text>
+            <postback>Soyafiliado</postback>
+        </button>
+    </template>
+</category>
+
+<category>
+    <pattern>Aperplat</pattern>
+    <template>
+        La apertura de la plataforma SYGNUS, la define la entidad pagadora, una vez finalizado el proceso de liquidación de nómina del periodo correspondiente. Las fechas cambian cada mes. 
+    </template>
+</category>
+
+<category>
+    <pattern>Canceldes</pattern>
+    <template>
+        Para que le deje de aplicar algún descuento en su nómina, porque usted se encuentra a paz y salvo, debe comunicarse directamente con el operador (banco, cooperativa, asociación,club) para que registre la cancelación en el sistema.
+
+        Para validar si el operador registro la cancelación consulte en en el portal beneficiario por medio de " mi dispo" / Ultimas Libranzas.
+    </template>
+</category>
+
+<category>
+    <pattern>desprend</pattern>
+    <template>
+        El comprobante de pago lo puede verificar en el siguiente enlace: 
+        <button>
+            <text>Haga clic aquí</text>
+            <url>https://www.cremil.gov.co/</url>
+        </button>
+    </template>
+</category>
+
+ 
+   <!-- Postsbacks unidos a los botones de Saludo inicial (Operadores) -->  
+   
+  <category>
+     <pattern>Soyoperador</pattern>
+         <template>
+         Señor/a operador escoja la opción adecuada
+         <button>
+            <text>Registro de novedades</text>
+            <postback>Regisnov</postback>
+        </button>
+        
+        <button>
+            <text>Ingreso al sistema</text>
+            <postback>Ingresis</postback>
+        </button>
+        
+        <button>
+            <text>Facturación</text>
+            <postback>Fact</postback>
+        </button>
+        
+        <button>
+            <text>Menu inicial</text>
+            <postback>_ DIAS</postback>
+        </button>
+     </template>
+ </category>
+ 
+   <!-- Postsbacks afiliados Registro de novedades -->  
+ 
+ 
+ <category>
+    <pattern>Regisnov</pattern>
+    <template>
+        Operador de Libranza/ digite el número de la opcion adecuada
+        
+        <button>
+            <text>Registro de novedades de ingreso y retiro</text>
+            <postback>Regisnov2</postback>
+        </button>
+        
+        <button>
+            <text>Mensajes de advertencia</text>
+            <postback>Menadver</postback>
+        </button>
+        
+        <button>
+            <text>Informes más importantes</text>
+            <postback>Inforimp</postback>
+        </button>
+        
+        <button>
+            <text>Menu operador</text>
+            <postback>Soyoperador</postback>
+        </button>
+    </template>
+</category>
+
+
+<category>
+    <pattern>Regisnov2</pattern>
+    <template>
+        <button>
+            <text>Registro de novedades de ingreso</text>
+            <postback>Regisnovin</postback>
+        </button>
+        
+        <button>
+            <text>Registro de novedades de retiro</text>
+            <postback>Regisnovre</postback>
+        </button>
+    </template>
+</category>
+
+<category>
+    <pattern>Regisnovin</pattern>
+    <template>
+        Para registrar una novedad de ingreso debe seguir los siguientes pasos:
+        <ol>
+            <li>Consultar cupo: Movimientos / Consultar Cupo (con autorización digital previa del beneficiario)</li>
+            <li>Registrar las condiciones del descuento: Administrar libranzas / ingreso de libranzas. Debe adjuntar un documento en PDF de la autorización firmada por el beneficiario.</li>
+            <li>El beneficiario debe confirmar las condiciones del descuento por cualquiera de los tres medios habilitados.</li>
+            <li>Una vez confirmada la novedad el operador de libranza debe auditar la novedad. Informes / imprimir codigos QR y escanear código QR. Administrar libranzas / auditar libranza.</li>
+        </ol>
+        
+        Para más detalle del proceso y las compras de cartera por favor revisa las guías. Opciones generales / ayudas del sistema.
+    </template>
+</category>
+
+<category>
+    <pattern>Regisnovre</pattern>
+    <template>
+        Para retirar o cancelar un descuento existe dos formas:
+        <ol>
+            <li>Si desea hacerlo directamente y no como una venta de cartera debe ingresar a administrar libranzas / ingreso de libranzas. Registrar la cedula, seleccionar el tipo de novedad de “retiro” , y  registrar el número de libranza. No es necesario adjuntar documentación; por último, clic en “procesar libranza”. 
+                Si la entidad se encuentra bloqueada en el sistema este proceso debe hacerlo mediante archivo plano. Por favor revisar la guía en opciones generales / ayudas del sistema.
+            </li>
+            <li>
+                Si el retiro es por una compra de cartera debe “liberar” la solicitud de compra de cartera una vez le suban los soportes de pago. Notificaciones de compra de cartera / solicitudes pendientes (carpeta amarilla).
+            </li>
+        </ol>
+    </template>
+</category>
+
+
+
+<category>
+    <pattern>Menadver</pattern>
+    <template>Los mensajes de advertencia</template>
+</category>
+
+<category>
+    <pattern>Inforimp</pattern>
+    <template>
+        Por medio de la plataforma existen varios informes para gestionar la información. Los más relevantes son:
+        <ul>
+            <li>Reporte de Libranzas: Consulta todas las novedades registradas en el sistema y el estado de cada una.</li>
+            <li>Libranzas auditadas recibidas: Consulta las novedades de ingreso confirmadas, auditadas y no auditadas.</li>
+            <li>Histórico de paz y salvos: Consulta las solicitudes de paz y salvo tanto cuando la entidad compra cartera como cuando vende, solo si, las novedades son auditadas.</li>
+        </ul>
+    </template>
+</category>
+
+
+
+   <!-- Postsbacks afiliados Ingreso al sistema -->  
+   
+
+<category>
+    <pattern>Ingresis</pattern>
+    <template>
+        Operador de Libranzas/ digite el número de la opcion adecuada
+        
+        <button>
+            <text>Inicio de sesión</text>
+            <postback>Inisesi</postback>
+        </button>
+        
+        <button>
+            <text>Bloqueos del sistema</text>
+            <postback>Bloqsis</postback>
+        </button>
+        
+        <button>
+            <text>Menu principal</text>
+            <postback>Soyoperador</postback>
+        </button>
+    </template>
+</category>
+
+
+<category>
+    <pattern>Inisesi</pattern>
+    <template>
+        <button>
+            <text>Ingresar</text>
+            <postback>Ingresesi</postback>
+        </button>
+        
+        <button>
+            <text>Recuperar clave</text>
+            <postback>Recupesei</postback>
+        </button>
+        
+        <button>
+            <text>Centro de ayuda</text>
+            <postback>Centrosesi</postback>
+        </button>
+    </template>
+</category>
+
+<category>
+    <pattern>Ingresesi</pattern>
+    <template>El inicio de sesión de entidades se debe hacer por el botón correspondiente. Debe registrar el usuario tal cual como fue asignado y la contraseña que registro por última vez.</template>
+</category>
+
+<category>
+    <pattern>Recupesei</pattern>
+    <template>Si olvido la contraseña debe darle clic en recuperar clave y responder la pregunta de seguridad asignada.</template>
+</category>
+
+<category>
+    <pattern>Centrosesi</pattern>
+    <template>Si aun asi no logra ingresar por favor cree un ticket con los datos del nombre del usuario.</template>
+</category>
+
+
+<category>
+    <pattern>Bloqsis</pattern>
+    <template>
+        En el sistema existen tres tipos de bloqueos, con cualquiera de los tres, puede liberar solicitudes de paz y salvo y registrar novedades de retiro por medio de archivo plano:
+        <button>
+            <text>Paz y salvo</text>
+            <postback>Pazysalvo</postback>
+        </button>
+        
+        <button>
+            <text>Entidad Pagadora</text>
+            <postback>Entpag</postback>
+        </button>
+        
+        <button>
+            <text>Facturas Vencidas</text>
+            <postback>Factven</postback>
+        </button>
+
+    </template>
+</category>
+
+
+<category>
+    <pattern>Pazysalvo</pattern>
+    <template>Paz y salvo pendiente al cerrar el periodo:  Ocurre cuando no se liberan las solicitudes de paz y salvo de compras de cartera al cerrar el perido. Para el desbloqueo de debe comunicar con el área encargada de la entidad pagadora.</template>
+</category>
+
+<category>
+    <pattern>Entpag</pattern>
+    <template>Entidad Pagadora: Este motivo indica que la entidad pagadora por alguna razón en especifico genero el bloqueo directamente. En este caso para conocer la causa debe comunicarse con la entidad pagadora.</template>
+</category>
+
+<category>
+    <pattern>Factven</pattern>
+    <template>Facturas Vencidas: SYGNUS genera este bloqueo por que no ha recibido confirmación del pago de las facturas, enviadas al correo, por las transacciones realizadas en el sistema. Cualquier inquietud comunicarse al correo cartera@northwayservices.com.co y/o al celular 3209025202.</template>
+</category>
+
+
+
+
+   <!-- Postsbacks Operadores Facturacion -->  
+   
+<category>
+    <pattern>Fact</pattern>
+    <template>
+        Operador de Libranza/ digite el número de la opcion adecuada
+        
+        <button>
+            <text>Pago de facturas</text>
+            <postback>Pagfact</postback>
+        </button>
+        
+        <button>
+            <text>Bloqueo por facturación</text>
+            <postback>Bloqfact</postback>
+        </button>
+        
+        <button>
+            <text>Menu principal</text>
+            <postback>Soyoperador</postback>
+        </button>
+    </template>
+</category>
+
+
+<category>
+    <pattern>Pagfact</pattern>
+    <template>
+        Debe realizar una consignación o transferencia electrónica a nuestra cuenta habilitada y enviar el soporte pago. 
+        Para más información por favor comuníquese al correo cartera@northwayservices.com.co o al celular 3209025202. Si desea pagar en línea, clic en el siguiente enlace:
+        
+        <link>
+            <text>Zona pagos</text>
+            <url>https://www.zonapagos.com/basica/</url>
+        </link>
+    </template>
+</category>
+
+<category>
+    <pattern>Bloqfact</pattern>
+    <template>
+        SYGNUS genera este bloqueo por que no ha recibido confirmación del pago de las facturas, enviadas al correo, por las transacciones realizadas en el sistema. Cualquier inquietud comunicarse al correo cartera@northwayservices.com.co y/o al celular 3209025202
+    </template>
+</category>
+ 
+    <!-- Manejo de sinonimos a saludo inicial  -->  
+     
+  <category>
+     <pattern>HOLA</pattern>
+     <template>
+         <srai>_ DIAS</srai>
+    </template>
+ </category>
+
+  <category>
+     <pattern>_ DIA</pattern>
+     <template>
+         <srai>_ DIAS</srai>
+    </template>
+ </category>
+ 
+ <category>
+     <pattern>_ DESCUENTO * LIBRANZA</pattern>
+     <template>
+         <srai>_ DIAS</srai>
+     </template>
+ </category>
+ 
+  <category>
+     <pattern>_ AUTORIZAR * LIBRANZA</pattern>
+     <template>
+         <srai>_ DIAS</srai>
+     </template>
+ </category>
+ 
+   <category>
+     <pattern>_ AUTORIZAR * LIBRANZA</pattern>
+     <template>
+         <srai>_ DIAS</srai>
+     </template>
+ </category>
+
+     <!-- Condicionales a la pregunta del usuario sobre: "clave de"  -->  
+ 
+  <category>
+     <pattern> CUAL ES MI CLAVE * *</pattern>
+     <template>
+         <think><set name="clave"><star index= "2"/></set></think>
+         <condition name="clave" >
+             <li value="cremil">Señor afiliado la clave de CREMIL la puede consultar en la web</li>
+             <li value="sygnus">Señor afiliado la clave de SYGNUS es la misma de CREMIL</li>
+         </condition>
+     </template>
+ </category>
+ 
+
+   <category>
+     <pattern>CLAVE *</pattern>
+     <template>
+         <think><set name="clave"><star index= "1"/></set></think>
+         <condition name="clave" >
+             <li value="cremil">Señor afiliado la clave de CREMIL la puede consultar en la web</li>
+             <li value="sygnus">Señor afiliado la clave de SYGNUS es la misma de CREMIL</li>
+         </condition>
+     </template>
+ </category>
+
+  <category>
+     <pattern> CUAL ES MI CLAVE *</pattern>
+     <template>
+         <think><set name="clave"><star index= "1"/></set></think>
+         <condition name="clave" >
+             <li value="cremil">Señor afiliado la clave de CREMIL la puede consultar en la web</li>
+             <li value="sygnus">Señor afiliado la clave de SYGNUS es la misma de CREMIL</li>
+         </condition>
+     </template>
+ </category>
+
+
+  <category>
+     <pattern> SE ME OLVIDO LA CLAVE * *</pattern>
+     <template>
+         <think><set name="clave"><star index= "2"/></set></think>
+         <condition name="clave" >
+             <li value="cremil">Señor afiliado la clave de CREMIL la puede consultar en la web</li>
+             <li value="sygnus">Señor afiliado la clave de SYGNUS es la misma de CREMIL</li>
+         </condition>
+     </template>
+ </category>
+ 
+
+
+     <!-- Aqui se guarda la cc y el nombre del usuario  -->  
+
+<category>
+    <pattern>MI NOMBRE ES * * </pattern>
+    <template>Buenos dias Señor/a <star index="1"/> <star index= "2"/> </template>
+</category>
+
+<category>
+    <pattern>MI CEDULA ES *</pattern>
+    <template>Su numero de cedula es <set name = "firstname"><star index="1"/> ¿Es correcto?</set> </template>
+</category>
+
+<category>
+    <pattern>CUAL ES MI NUMERO DE CEDULA</pattern>
+    <template>Su numero es <get name="firstname"/> </template>
+</category>
+
+<category>
+    <pattern>_ CLAVE * SYGNUS</pattern>
+    <template>Señor afiliado, la clave de SYGNUS es la misma de CREMIL</template>
+</category>
+
+</aiml>

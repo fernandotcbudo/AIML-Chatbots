@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml version="2.0">
+
+
+    	<!-- Sinonimos ingreso al pb  -->
+
+<category>
+     <pattern>ESTOY TRATANDO DE * A SIGNUS </pattern>
+     <template>
+         <think><set name="apertura"><star index= "1"/></set></think>
+         <condition name="apertura" >
+             <li value="ingresar">
+                 <srai>
+                     Ingresarpor
+                 </srai>
+             </li>
+             
+            <li value="entrar">
+                 <srai>
+                     Ingresarpor
+                 </srai>
+             </li>
+
+         </condition>
+     </template>
+ </category>
+ 
+ <category>
+     <pattern>ESTOY TRATANDO DE * A SYGNUS </pattern>
+     <template>
+         <think><set name="apertura"><star index= "1"/></set></think>
+         <condition name="apertura" >
+             <li value="ingresar">
+                 <srai>
+                     Ingresarpor
+                 </srai>
+             </li>
+             
+            <li value="entrar">
+                 <srai>
+                     Ingresarpor
+                 </srai>
+             </li>
+
+         </condition>
+     </template>
+ </category>
+ 
+ 
+ 
+<category>
+     <pattern>NO PUEDO * A SIGNUS </pattern>
+     <template>
+         <think><set name="apertura"><star index= "1"/></set></think>
+         <condition name="apertura" >
+             <li value="ingresar">
+                 <srai>
+                     Ingresarpor
+                 </srai>
+             </li>
+             
+            <li value="entrar">
+                 <srai>
+                     Ingresarpor
+                 </srai>
+             </li>
+
+         </condition>
+     </template>
+ </category>
+ 
+ <category>
+     <pattern>NO PUEDO * A SYGNUS </pattern>
+     <template>
+         <think><set name="apertura"><star index= "1"/></set></think>
+         <condition name="apertura" >
+             <li value="ingresar">
+                 <srai>
+                     Ingresarpor
+                 </srai>
+             </li>
+             
+            <li value="entrar">
+                 <srai>
+                     Ingresarpor
+                 </srai>
+             </li>
+
+         </condition>
+     </template>
+ </category>
+ 
+ <category>
+     <pattern>NO ME DEJA * A SIGNUS </pattern>
+     <template>
+         <think><set name="apertura"><star index= "1"/></set></think>
+         <condition name="apertura" >
+             <li value="ingresar">
+                 <srai>
+                     Ingresarpor
+                 </srai>
+             </li>
+             
+            <li value="entrar">
+                 <srai>
+                     Ingresarpor
+                 </srai>
+             </li>
+
+         </condition>
+     </template>
+ </category>
+ 
+ <category>
+     <pattern>NO ME DEJA * A SYGNUS </pattern>
+     <template>
+         <think><set name="apertura"><star index= "1"/></set></think>
+         <condition name="apertura" >
+             <li value="ingresar">
+                 <srai>
+                     Ingresarpor
+                 </srai>
+             </li>
+             
+            <li value="entrar">
+                 <srai>
+                     Ingresarpor
+                 </srai>
+             </li>
+
+         </condition>
+     </template>
+ </category>
+	
+
+
+ <category>
+     <pattern>ESTOY * EN SIGNUS </pattern>
+     <template>
+         <think><set name="apertura"><star index= "1"/></set></think>
+         <condition name="apertura" >
+             <li value="bloqueado">
+                 <srai>
+                     Ingresarpor
+                 </srai>
+             </li>
+             
+            <li value="bloqueada">
+                 <srai>
+                     Ingresarpor
+                 </srai>
+             </li>
+
+         </condition>
+     </template>
+ </category>
+ 
+ <category>
+     <pattern>ESTOY * EN SYGNUS </pattern>
+     <template>
+         <think><set name="apertura"><star index= "1"/></set></think>
+         <condition name="apertura" >
+             <li value="bloqueado">
+                 <srai>
+                     Ingresarpor
+                 </srai>
+             </li>
+             
+            <li value="bloqueada">
+                 <srai>
+                     Ingresarpor
+                 </srai>
+             </li>
+
+         </condition>
+     </template>
+ </category>
+	
+	
+	
+
+	
+</aiml>

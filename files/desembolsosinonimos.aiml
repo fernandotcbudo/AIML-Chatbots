@@ -1,0 +1,459 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml version="2.0">
+	<!-- Sinonimos desembolso  -->
+	
+  <category>
+     <pattern>NECESITO CONSULTAR * *</pattern>
+     <template>
+         <think><set name="clave"><star index= "2"/></set></think>
+         <condition name="clave" >
+             <li value="desprendible">
+                 <srai>
+                     Tipcert
+                 </srai>
+             </li>
+             <li value="certificado">
+                <button>
+                    <text>Tipos de certificado</text>
+                    <postback>Tipcert</postback>
+                </button>
+             </li>
+             <li value="comprobante">
+                  <srai>
+                     Tipcert
+                 </srai>
+             </li>
+         </condition>
+     </template>
+ </category>
+ 
+   <category>
+     <pattern>NECESITO CONSULTAR * * * *</pattern>
+     <template>
+         <think><set name="clave"><star index= "2"/></set></think>
+         <condition name="clave" >
+             <li value="desprendible">
+                 <srai>
+                     Tipcert
+                 </srai>
+             </li>
+             <li value="certificado">
+                <button>
+                    <text>Tipos de certificado</text>
+                    <postback>Tipcert</postback>
+                </button>
+             </li>
+             <li value="comprobante">
+                  <srai>
+                     Tipcert
+                 </srai>
+             </li>
+         </condition>
+     </template>
+ </category>
+ 
+    <category>
+     <pattern>COMO DESCARGAR * * * *</pattern>
+     <template>
+         <think><set name="clave"><star index= "2"/></set></think>
+         <condition name="clave" >
+             <li value="desprendible">
+                 <srai>
+                     Tipcert
+                 </srai>
+             </li>
+             <li value="certificado">
+                <button>
+                    <text>Tipos de certificado</text>
+                    <postback>Tipcert</postback>
+                </button>
+             </li>
+             <li value="comprobante">
+                  <srai>
+                     Tipcert
+                 </srai>
+             </li>
+         </condition>
+     </template>
+ </category>
+ 
+ 
+     <category>
+     <pattern>COMO DESCARGAR * * * *</pattern>
+     <template>
+         <think><set name="clave"><star index= "2"/></set></think>
+         <condition name="clave" >
+             <li value="desprendible">
+                 <srai>
+                     desprend
+                 </srai>
+             </li>
+             <li value="certificado">
+                <button>
+                    <text>Tipos de certificado</text>
+                    <postback>Tipcert</postback>
+                </button>
+             </li>
+             <li value="comprobante">
+                  <srai>
+                     desprend
+                 </srai>
+             </li>
+         </condition>
+     </template>
+ </category>
+ 
+ 
+    <category>
+     <pattern>NECESITO QUE ME HAGAN EL *</pattern>
+     <template>
+         <think><set name="clave"><star index= "1"/></set></think>
+         <condition name="clave" >
+             <li value="desenborso">
+                 <srai>
+                     desprend
+                 </srai>
+             </li>
+             <li value="desembolso">
+                <srai>
+                     desprend
+                 </srai>
+             </li>
+     
+         </condition>
+     </template>
+ </category>
+ 
+ 
+     <category>
+     <pattern>NO ME HAN DESEMBOLSADO * *</pattern>
+     <template>
+         <think><set name="clave"><star index= "2"/></set></think>
+         <condition name="clave" >
+             <li value="excedente">
+                 <srai>
+                     Ingresarpor
+                 </srai>
+             </li>
+             
+             <li value="dinero">
+                 <srai>
+                     Ingresarpor
+                 </srai>
+         
+             </li>
+             
+            <li value="plata">
+                <srai>
+                    Ingresarpor
+                </srai>
+ 
+             </li>
+     
+         </condition>
+     </template>
+ </category>
+ 
+ 
+<category>
+     <pattern>NECESITO QUE ME DESEMBOLSEN * *</pattern>
+     <template>
+         <think><set name="clave"><star index= "2"/></set></think>
+         <condition name="clave" >
+             <li value="excedente">
+                 <srai>
+                     Desembol
+                 </srai>
+             </li>
+             
+             <li value="dinero">
+                 <srai>
+                     Desembol
+                 </srai>
+         
+             </li>
+             
+            <li value="plata">
+                <srai>
+                    Desembol
+                </srai>
+ 
+             </li>
+     
+         </condition>
+     </template>
+ </category>
+ 
+ 
+ <category>
+     <pattern>NO ME HAN DESEMBOLSADO * *</pattern>
+     <template>
+         <think><set name="clave"><star index= "2"/></set></think>
+         <condition name="clave" >
+             <li value="excedente">
+                 <srai>
+                     Desembol
+                 </srai>
+             </li>
+             
+             <li value="dinero">
+                 <srai>
+                     Desembol
+                 </srai>
+         
+             </li>
+             
+            <li value="plata">
+                <srai>
+                    Desembol
+                </srai>
+ 
+             </li>
+     
+         </condition>
+     </template>
+ </category>
+ 
+ 
+  <category>
+     <pattern>CUANDO ME DESEMBOLSAN * *</pattern>
+     <template>
+         <think><set name="clave"><star index= "2"/></set></think>
+         <condition name="clave" >
+             <li value="excedente">
+                 <srai>
+                     Desembol
+                 </srai>
+             </li>
+             
+             <li value="dinero">
+                 <srai>
+                     Desembol
+                 </srai>
+         
+             </li>
+             
+            <li value="plata">
+                <srai>
+                    Desembol
+                </srai>
+ 
+             </li>
+     
+         </condition>
+     </template>
+ </category>
+ 
+ 
+   <category>
+     <pattern>NO ME HACEN EL * </pattern>
+     <template>
+         <think><set name="clave"><star index= "1"/></set></think>
+         <condition name="clave" >
+             <li value="desembolso">
+                 <srai>
+                     Desembol
+                 </srai>
+             </li>
+             
+             <li value="desemborso">
+                 <srai>
+                     Desembol
+                 </srai>
+         
+             </li>
+             
+            <li value="desemboso">
+                <srai>
+                    Desembol
+                </srai>
+ 
+             </li>
+     
+         </condition>
+     </template>
+ </category>
+ 
+    <category>
+     <pattern>CREMIL NO AUTORIZA MI  * </pattern>
+     <template>
+         <think><set name="clave"><star index= "1"/></set></think>
+         <condition name="clave" >
+             <li value="desembolso">
+                 <srai>
+                     Desembol
+                 </srai>
+             </li>
+             
+             <li value="desemborso">
+                 <srai>
+                     Desembol
+                 </srai>
+         
+             </li>
+             
+            <li value="desemboso">
+                <srai>
+                    Desembol
+                </srai>
+ 
+             </li>
+     
+         </condition>
+     </template>
+ </category>
+ 
+ 
+<category>
+     <pattern>NO HAN PERMITIDO EL INGRESO DE * *</pattern>
+     <template>
+         <think><set name="clave"><star index= "2"/></set></think>
+         <condition name="clave" >
+             <li value="excedente">
+                 <srai>
+                     Desembol
+                 </srai>
+             </li>
+             
+             <li value="dinero">
+                 <srai>
+                     Desembol
+                 </srai>
+         
+             </li>
+             
+            <li value="plata">
+                <srai>
+                    Desembol
+                </srai>
+ 
+             </li>
+     
+         </condition>
+     </template>
+ </category>
+ 
+ 
+ <category>
+     <pattern>NO ME ENTREGAN * *</pattern>
+     <template>
+         <think><set name="clave"><star index= "2"/></set></think>
+         <condition name="clave" >
+             <li value="excedente">
+                 <srai>
+                     Desembol
+                 </srai>
+             </li>
+             
+             <li value="dinero">
+                 <srai>
+                     Desembol
+                 </srai>
+         
+             </li>
+             
+            <li value="plata">
+                <srai>
+                    Desembol
+                </srai>
+ 
+             </li>
+     
+         </condition>
+     </template>
+ </category>
+ 
+ 
+ <category>
+     <pattern>ME QUEDO UN  *</pattern>
+     <template>
+         <think><set name="clave"><star index= "1"/></set></think>
+         <condition name="clave" >
+             <li value="excedente">
+                 <srai>
+                     Desembol
+                 </srai>
+             </li>
+             
+             <li value="dinero">
+                 <srai>
+                     Desembol
+                 </srai>
+         
+             </li>
+             
+            <li value="plata">
+                <srai>
+                    Desembol
+                </srai>
+ 
+             </li>
+     
+         </condition>
+     </template>
+ </category>
+ 
+ 
+ 
+ 	<!-- Postbacks certificado  -->
+ 	
+ 	<category>
+ 	    <pattern>Tipcert</pattern>
+ 	    <template>
+ 	        <button>
+ 	            <text>Certificado de nomina</text>
+ 	            <postback>Certnomin</postback>
+             </button>
+             
+             <button>
+ 	            <text>Certificado de asignación de retiro</text>
+ 	            <postback>Certasig</postback>
+             </button>
+             
+            <button>
+ 	            <text>Certificado de retención en la fuente</text>
+ 	            <postback>Certrete</postback>
+             </button>
+             
+ 	    </template>
+     </category>
+     
+     <category>
+         <pattern>Certnomin</pattern>
+         <template>Su certificado de nomina puede ser consultado en CREMIL</template>
+     </category>
+     
+    <category>
+         <pattern>Certasig</pattern>
+         <template>Para este certificado por favor comuniquese con CREMIL al telefono 3537300</template>
+     </category>
+     
+     <category>
+         <pattern>Certrete</pattern>
+         <template>Para este certificado por favor comuniquese con CREMIL al telefono 3537300</template>
+     </category>
+     
+     
+      	<!-- Postbacks desembolso  -->
+     
+<category>
+    <pattern>Desembol</pattern>
+    <template>
+        Las pagadurias no intervienen en sus procesos Bancarios, si el descuento está dentro de lo delimitado por la ley (50% de sueldo básico ) se le podrán realizar los descuentos con su autorización.
+        <br/>
+        <br/>
+        Para validar el estado de su libranza y/o compra de cartera por favor ingrese al: <br></br><link><text>Portal beneficiario</text><url>https://www.sygnus.co/PlataformaSygnus/</url></link><br/> Valide en la opción " mi dispo" en paz y salvos. La entidad que compra cartera debe subir los soportes de pago y la entidad que vende liberar el descuento
+        <button>
+ 	      <text>Haga clic aqui si esta en proceso de Compra de cartera</text>
+ 	      <postback>Compcart</postback>
+        </button>
+    </template>
+</category>
+    
+    
+     <category>
+         <pattern>Compcart</pattern>
+         <template>Si esta en proceso de compra de cartera, la entidad que vende debe liberar el descuento por medio de la plataforma SYGNUS, de lo contrario no puede ingresar el nuevo descuento y se debe volver a registrar en el siguiente periodo.</template>
+     </category>
+ 
+</aiml>

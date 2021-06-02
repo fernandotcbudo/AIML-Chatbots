@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml version="2.0">
+	<!-- Sinonimo solicitud credito  -->
+	
+<category>
+     <pattern>COMO SOLICITAR UN * </pattern>
+     <template>
+         <think><set name="apertura"><star index= "1"/></set></think>
+         <condition name="apertura" >
+             <li value="credito">
+                 <srai>
+                     SolicreditoF
+                 </srai>
+             </li>
+             
+            <li value="descuento">
+                 <srai>
+                     SolicreditoF
+                 </srai>
+             </li>
+             
+            <li value="descuento de afiliacion">
+                 <srai>
+                     SolicreditoF
+                 </srai>
+             </li>
+            
+
+         </condition>
+     </template>
+ </category>
+ 
+ 
+ <category>
+     <pattern>COMO SACAR UN * </pattern>
+     <template>
+         <think><set name="apertura"><star index= "1"/></set></think>
+         <condition name="apertura" >
+             <li value="credito">
+                 <srai>
+                     SolicreditoF
+                 </srai>
+             </li>
+             
+            <li value="descuento">
+                 <srai>
+                     SolicreditoF
+                 </srai>
+             </li>
+             
+            <li value="descuento de afiliacion">
+                 <srai>
+                     SolicreditoF
+                 </srai>
+             </li>
+            
+         </condition>
+     </template>
+ </category>
+
+
+ <category>
+     <pattern>VOY A HACER UN * </pattern>
+     <template>
+         <think><set name="apertura"><star index= "1"/></set></think>
+         <condition name="apertura" >
+             <li value="credito">
+                 <srai>
+                     SolicreditoF
+                 </srai>
+             </li>
+             
+            <li value="descuento">
+                 <srai>
+                     SolicreditoF
+                 </srai>
+             </li>
+             
+            <li value="descuento de afiliacion">
+                 <srai>
+                     SolicreditoF
+                 </srai>
+             </li>
+            
+         </condition>
+     </template>
+ </category>
+
+
+ <category>
+     <pattern>VOY A SOLICITAR UN * </pattern>
+     <template>
+         <think><set name="apertura"><star index= "1"/></set></think>
+         <condition name="apertura" >
+             <li value="credito">
+                 <srai>
+                     SolicreditoF
+                 </srai>
+             </li>
+             
+            <li value="descuento">
+                 <srai>
+                     SolicreditoF
+                 </srai>
+             </li>
+             
+            <li value="descuento de afiliacion">
+                 <srai>
+                     SolicreditoF
+                 </srai>
+             </li>
+            
+         </condition>
+     </template>
+ </category>
+ 
+  <category>
+     <pattern>VOY A SOLICITAR UN * </pattern>
+     <template>
+         <think><set name="apertura"><star index= "1"/></set></think>
+         <condition name="apertura" >
+             <li value="credito">
+                 <srai>
+                     SolicreditoF
+                 </srai>
+             </li>
+             
+            <li value="descuento">
+                 <srai>
+                     SolicreditoF
+                 </srai>
+             </li>
+             
+            <li value="descuento de afiliacion">
+                 <srai>
+                     SolicreditoF
+                 </srai>
+             </li>
+         </condition>
+     </template>
+ </category>
+	
+</aiml>

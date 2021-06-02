@@ -29,74 +29,24 @@
     
     <category>
 	    <pattern>pin</pattern>
-	    <template> ¿Es usted afiliado?</template>
+	    <template> ¿Es usted afiliado? 
+	    </template>
     </category>
     
           <category>
         <pattern>pink</pattern>
-        <template><srai>pin</srai>></template>
+        <template><srai>pin</srai></template>
     </category>
     
       <category>
         <pattern>codigo</pattern>
-        <template><srai>pin</srai>></template>
+        <template><srai>pin</srai></template>
     </category>
     
     
     	    <!-- Desembolso -->    
     	    
-    	     <category>
-    <pattern>desembolso</pattern>
-    <template>
-        ¿Esta en proceso de compra de cartera?
-    </template>
-</category>
-    	    
- <category>
-    <pattern>_ desembolso</pattern>
-    <template>
-        ¿Esta en proceso de compra de cartera?
-    </template>
-</category>
 
-    	<category>
-	    <pattern>* desembolso *</pattern>
-	    <template>¿Esta en proceso de compra de cartera?</template>
-    </category>
-    
-    	<category>
-	    <pattern>desembolso *</pattern>
-	    <template>¿Esta en proceso de compra de cartera?</template>
-    </category>
-         <category>
-        <pattern>desembolsen</pattern>
-        <template><srai>desembolso</srai>></template>
-    </category>
-    
-      <category>
-        <pattern>desemblosen</pattern>
-        <template><srai>desembolso</srai>></template>
-    </category>
-    
-       <category>
-        <pattern>desembolsado</pattern>
-        <template><srai>desembolso</srai>></template>
-    </category>
-    
-      <category>
-        <pattern>desembolsos</pattern>
-        <template><srai>desembolso</srai>></template>
-    </category>
-    
-       <category>
-        <pattern>desemborso</pattern>
-        <template><srai>desembolso</srai>></template>
-    </category>
-    
-        <category>
-        <pattern>desembolsado</pattern>
-        <template><srai>desembolso</srai>></template>
-    </category>
 <category>
     <that>_ compra de cartera</that>
     <pattern>Si</pattern>

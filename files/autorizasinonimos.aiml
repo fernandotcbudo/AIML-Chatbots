@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml version="2.0">
+    
+    	<!-- Sinonimos autorizaciones  -->
+
+<category>
+     <pattern>CUAL ES EL *  </pattern>
+     <template>
+         <think><set name="apertura"><star index= "1"/></set></think>
+         <condition name="apertura" >
+             <li value="si">
+                 <srai>
+                     Creauto
+                 </srai>
+             </li>
+             
+            <li value="sisi">
+                 <srai>
+                     Creauto
+                 </srai>
+             </li>
+
+         </condition>
+     </template>
+ </category>
+ 
+ <category>
+     <pattern>NO TENGO EL * </pattern>
+     <template>
+         <think><set name="apertura"><star index= "1"/></set></think>
+         <condition name="apertura" >
+             <li value="si">
+                 <srai>
+                     Creauto
+                 </srai>
+             </li>
+             
+            <li value="sisi">
+                 <srai>
+                     Creauto
+                 </srai>
+             </li>
+
+         </condition>
+     </template>
+ </category>
+ 
+ 
+  <category>
+     <pattern>COMO CREAR UNA * </pattern>
+     <template>
+         <think><set name="apertura"><star index= "1"/></set></think>
+         <condition name="apertura" >
+             <li value="autorizacion">
+                 <srai>
+                     Creauto
+                 </srai>
+             </li>
+             
+            <li value="autorisacion">
+                 <srai>
+                     Creauto
+                 </srai>
+             </li>
+
+         </condition>
+     </template>
+ </category>
+
+
+
+</aiml>

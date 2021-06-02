@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml version="2.0">
+
+<category>
+     <pattern>COMO * MIS DATOS </pattern>
+     <template>
+         <think><set name="apertura"><star index= "1"/></set></think>
+         <condition name="apertura" >
+             <li value="actualizo">
+                 <srai>
+                     Actuadatos
+                 </srai>
+             </li>
+             
+            <li value="actualiso">
+                 <srai>
+                     Actuadatos
+                 </srai>
+             </li>
+             
+            <li value="cambio">
+                 <srai>
+                     Actuadatos
+                 </srai>
+             </li>
+            
+         </condition>
+     </template>
+ </category>
+ 
+ 
+ <category>
+     <pattern>NECESITO * MIS DATOS </pattern>
+     <template>
+         <think><set name="apertura"><star index= "1"/></set></think>
+         <condition name="apertura" >
+             <li value="actualizar">
+                 <srai>
+                     Actuadatos
+                 </srai>
+             </li>
+             
+            <li value="actualisar">
+                 <srai>
+                     Actuadatos
+                 </srai>
+             </li>
+             
+            <li value="cambiar">
+                 <srai>
+                     Actuadatos
+                 </srai>
+             </li>
+            
+         </condition>
+     </template>
+ </category>
+ 
+ 
+  <category>
+     <pattern>NO TENGO * MIS DATOS </pattern>
+     <template>
+         <think><set name="apertura"><star index= "1"/></set></think>
+         <condition name="apertura" >
+             <li value="actualizados">
+                 <srai>
+                     Actuadatos
+                 </srai>
+             </li>
+             
+            <li value="actualisados">
+                 <srai>
+                     Actuadatos
+                 </srai>
+             </li>
+             
+            <li value="vigentes">
+                 <srai>
+                     Actuadatos
+                 </srai>
+             </li>
+            
+         </condition>
+     </template>
+ </category>
+
+
+</aiml>
